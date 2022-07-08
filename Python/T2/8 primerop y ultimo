@@ -1,0 +1,7 @@
+lista = ["perro", "gato", "tortuga", "gallina"]
+
+primero = lista[0]
+
+ultimo = lista[-1]
+
+print(primero, ultimo)

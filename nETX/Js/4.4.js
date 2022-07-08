@@ -1,0 +1,26 @@
+var primera = "Vamos a marte";
+var segunda = "Pensando en ti";
+var tercera = "First";
+var cuarta = "Monkey dance";
+var quinta = "Curtis";
+var sexta = "Mujer perfecta";
+
+canciont = [];
+
+function canciones (cancion){
+    canciont.push(cancion);
+
+}
+canciones(primera);
+canciones(segunda);
+canciones(tercera);
+canciones(cuarta);
+canciones(quinta);
+canciones(sexta);
+
+
+console.log("mi lista de canciones es:");
+
+for(i of canciont) {
+    console.log(i);
+}

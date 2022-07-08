@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ejemplo</title>
+    </head>
+    A<body>
+    <form action="#">
+        <fieldset>
+            <legend>Registro</legend>
+            <p>
+            <label for="nombre">Nombre*:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" minlength="3" maxlength="30" required>
+            </p>
+            <p>
+                <label for="Apellido">Apellido*:</label>
+                <input type="text" name="apellido" id="Apellido"  placeholder="Apellido" minlength="3" maxlength="30" >
+            </p>
+            <p>
+                <label for="Edad">Edad:</label>
+                <input type="number" name="edad" id="Edad"  placeholder="Edad" min="1" max="200" required>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" minlength="3" maxlength="30" required>
+            </p>
+            <p>
+                <label for="Ocupacion">Ocupaci&oacute;n:</label>
+                <select name="ocupacion" id="ocupacion">
+                    <option value="">Seleccione una opcion</option>
+                    <option value="Musico">Músico</option>
+                    <option value="Pinto">Pinto</option>
+                    <option value="Actor">Actor</option>
+                    </select>
+            </p>
+            <p>
+                <label for="comentario">Comentario:</label> <br />
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="terminos" id="terminos" required>
+                <label for="terminos">Acepto los t&eacute;rminos y condiciones</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
