@@ -19,6 +19,3 @@ console.log(resultado)
 
 
 
-
-
-9
