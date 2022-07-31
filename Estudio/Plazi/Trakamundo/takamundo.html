@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Takataka</title>
+        <script src="taka.js"></script>
+    </head>
+    <body>
+        <h1>Bievenido a Takamundo</h1>
+
+        <section id="select-pet">
+            <h2>Elije tu Arma:</h2>
+
+
+            <label for="solar">Solar sword</label>
+            <input type="radio" name="Arma" id="solar" >
+
+            <label for="ocean">Ocean sword</label>
+            <input type="radio" name="Arma" id="ocean" >
+
+            <label for="forest">Forest sword</label>
+            <input type="radio" name="Arma" id="forest" >
+
+            <!--<label for="moon">Moon sword</label>
+            <input type="radio" name="Arma" id="moon" >
+
+            <label for="posion">Posion sword</label>
+            <input type="radio" name="Arma" id="posion" >
+
+            <label for="dirt">Dirt sword</label>
+            <input type="radio" name="Arma" id="dirt" >
+            <br>
+-->
+            <button id="boton-pet">Selecionar</button>
+
+            <br>
+            <br>
+            <br>
+
+                Solar sword -> Fuego -> Oscuridad y Madera \\ Agua y Roca  \\ veneno
+
+                Ocean sword -> Agua -> Fuego y Roca \\ Madera y veneno \\ oscuridad
+
+                forest sword -> madera -> Agua y veneno \\ Fuego y oscuridad \\ Roca 
+
+                Moon sword -> Oscuridad -> Madera y Roca \\ fuego y veneno \\ Agua
+
+                Posion sword -> veneno -> Oscuridad y Agua \\ Madera y Roca  \\ veneno
+
+                Dirt sword -> Roca -> fuego y veneno \\ agua y oscuridad \\ Madera 
+
+
+        </section>
+
+
+
+        <section id="select-attac">
+            <h2>Escoje tu ataque:</h2>
+
+            <p>Tu <span id="vidas-player">20</span> vidas Y usaste a <span id="sword-use"></span></p>
+            <p>El enemigo tiene <span id="vidas-enemy">20</span> vidas Y tiene a <span id="sword-enemy"></span></p>
+
+            <p>
+                <button id="boton-rapido">Ataque rapido </button>
+                <button id="boton-fuerte">Ataque fuerte </button>
+                <button id="boton-escudo">Escudo </button>
+                <button id="boton-esquivar">Esquivar </button>
+            </p>
+        </section>
+        <section id="mensaje">
+            <p></p>
+        </section>
+        <section id="reinicio">
+            <button id="boton-reinicio">Reiniciar</button>
+        </section>
+    </body>
+</html>
