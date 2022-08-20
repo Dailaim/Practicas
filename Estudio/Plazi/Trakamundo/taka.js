@@ -12,6 +12,14 @@ function aleatorio(min, max){
 }
 
 function iniciarjuego(){
+    let selecionReiniciar = document.getElementById("reinicio")
+    selecionReiniciar.style.display = "none"
+
+    let seleciontAttac = document.getElementById("select-attac")
+    seleciontAttac.style.display = "none"
+
+
+
     var BotonPetPlayer = document.getElementById("boton-pet")
     BotonPetPlayer.addEventListener("click",SelectMascota)
     let ButonAttack = document.getElementById("boton-rapido")
@@ -22,6 +30,8 @@ function iniciarjuego(){
     ButonEscudo.addEventListener("click", escudo)
     let ButonEsquivar = document.getElementById("boton-esquivar")
     ButonEsquivar.addEventListener("click", esquivar)
+    let botonRenicio = document.getElementById("boton-reinicio")
+    botonRenicio.addEventListener("click", reinicioBoton)
 }
 
 
@@ -61,6 +71,11 @@ function SelectMascota(){
 
 
 function SelectMascotaEnemy(){
+    let selecionPet = document.getElementById("select-pet")
+    selecionPet.style.display = "none"
+
+    let seleciontAttac = document.getElementById("select-attac")
+    seleciontAttac.style.display = "block"
     swordUseEnemy = document.getElementById("sword-enemy")
         let EnemySelec = aleatorio(1,3)
     if(EnemySelec == 1){
@@ -124,7 +139,17 @@ function SayMensaje(){
     secionmensaje.appendChild(parrafo)
     }else{
     parrafo.innerHTML = `Termino el juego`
+    let selecionReiniciar = document.getElementById("reinicio")
+    selecionReiniciar.style.display = "block"
     secionmensaje.appendChild(parrafo)
+    let ButonAttack = document.getElementById("boton-rapido")
+    ButonAttack.disabled = true
+    let ButonAttackHark = document.getElementById("boton-fuerte")
+    ButonAttackHark.disabled = true
+    let ButonEscudo = document.getElementById("boton-escudo")
+    ButonEscudo.disabled = true
+    let ButonEsquivar = document.getElementById("boton-esquivar")
+    ButonEsquivar.disabled = true
     }
 }
 
@@ -149,6 +174,10 @@ function finiquito(c1){
 }
 
 function parada(){
+        let ban
+
+
+
     if(healPlayer == 0){
         alert("Te an derrotado")
 
@@ -215,5 +244,9 @@ else if((n1 == "Solar Sword" || n2 == "Solar Sword")&&(n1 == "Ocean Sword" || n2
 }
 }
 
+function reinicioBoton(){
+    location.reload()
+}
 
-//window.addEventListener("load",iniciarjuego)
+
+window.addEventListener("load",iniciarjuego)
