@@ -24,6 +24,8 @@ body{
 .tarjetas{
     display: flex;
     gap: 10px;
+
+    
 }
 #box{
     font-size:25px;
@@ -61,8 +63,22 @@ input{
 }
 
 label{
+    display: inline-flex;
     border: 10px;
     margin: 15px;
+    width: 200px;
     font-size:25px;
     padding-bottom: 10px;
+    border: #371B58;
+    background-color: #7858A6;
+    border-radius: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+.tarjetas img{
+    width: 80px;
 }
